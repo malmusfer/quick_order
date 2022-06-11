@@ -1,0 +1,23 @@
+Khana v3.0.2.1 Update Documentation
+
+
+
+// ------------------------------------- //
+
+1) How To Update
+
+
+- replace helper.php from this root: root_file/script/app/helper
+
+
+
+// ------------------------------------- //
+
+
+Created: 7/08/2020
+Last Update: 27/06/2021
+By: AMCoders
+Email: amcoders360@gmail.com
+
+
+Copyright © 2020 Khana All rights reserved

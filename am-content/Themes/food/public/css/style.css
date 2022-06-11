@@ -1,0 +1,1707 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    font-family: 'Jost', sans-serif;
+}
+
+.f-right {
+    float: right;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* header */
+
+.user-img img {
+    height: 50px;
+}
+
+.header-menu ul li {
+    display: inline-block;
+    padding: 0 25px;
+    position: relative;
+}
+
+.header-menu ul li ul.submenu {
+    position: absolute;
+    background: #fff;
+    color: #222;
+    width: 220px;
+    top: 200%;
+    transition: .3s;
+    padding-top: 30px;
+    opacity: 0;
+    visibility: hidden;
+    box-shadow: 7px 5px 20px rgba(0, 41, 117, .12);
+    z-index: 99999;
+    padding-bottom: 30px;
+    padding-left: 18px;
+    padding-right: 18px;
+    border-radius: 5px
+}
+
+.header-menu ul li:hover>ul.submenu {
+    opacity: 1;
+    visibility: visible;
+    top: 150%
+}
+
+.header-menu ul li ul.submenu li ul.submenu {
+    left: 100%;
+    top: 0
+}
+
+.header-menu ul li ul.submenu li {
+    margin: 0;
+    display: block;
+    margin-bottom: 14px;
+    padding: 5px 7px;
+}
+
+.header-menu ul li ul.submenu li:hover>a {
+    color: #F6524F;
+}
+
+.header-menu ul li ul.submenu>.header-menu ul li a i {
+    display: block
+}
+
+.header-menu ul li:hover>a {
+    color: #F6524F;
+}
+
+.header-menu ul li ul.submenu li:last-child {
+    margin-bottom: 0
+}
+
+.header-menu ul li ul.submenu li a {
+    color: #263045;
+    padding: 0;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: .4s;
+}
+
+
+.login-btn a {
+    background: #FB524F;
+    color: #fff;
+    padding: 15px 40px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.header-area {
+    box-shadow: 0 0 20px #eae8e8;
+    position: relative;
+}
+
+.login-btn {
+    padding: 38px 0;
+    padding-left: 30px;
+    border-left: 1px solid #eceaea;
+}
+
+.cart-section {
+    padding: 32px 30px;
+    border-left: 1px solid #eceaea;
+    position: relative;
+}
+
+.cart-section a svg {
+    width: 40px;
+    height: 40px;
+    color: #333;
+}
+
+.cart-section span.count {
+    background: #fb524e;
+    color: #fff;
+    padding: 4px 6px;
+    font-size: 13px;
+    border-radius: 33px;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+}
+
+.language-name {
+    padding-left: 5px;
+    font-size: 17px;
+}
+
+.language-section {
+    display: flex;
+    align-items: center;
+    padding: 36px 20px;
+    border-left: 1px solid #eceaea;
+}
+
+.header-menu {
+    padding: 40px 20px;
+}
+
+.header-menu ul li a {
+    color: #333;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+
+/* slider */
+
+.slider-area {
+    width: 100%;
+    height: 750px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slider-content {
+    height: 750px;
+    display: flex;
+    align-items: center;
+}
+
+.slider-content h3 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.slider-address-filed {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.slider-input input {
+    width: 100%;
+    border: none;
+    background: #fff;
+    height: 70px;
+    padding: 0 55px;
+    box-shadow: 0 0 20px #eaeaea;
+    color: #333;
+    font-weight: 500;
+}
+
+.slider-input input:focus {
+    outline: 0;
+    box-shadow: 0 0 20px #eaeaea;
+}
+
+.slider-main-area {
+    width: 100%;
+}
+
+.slider-input {
+    width: 100%;
+    position: relative;
+}
+
+.slider-button button {
+    border: none;
+    height: 100%;
+    padding: 20px 45px;
+    margin-left: 20px;
+    background: #fb524e;
+    color: #fff;
+    font-size: 18px;
+    white-space: nowrap;
+    border-radius: 5px;
+}
+
+.slider-des {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #444242;
+    margin-bottom: 40px;
+}
+
+.location-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+}
+
+.location-icon svg {
+    width: 20px;
+    height: 20px;
+}
+
+.current-location-icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+/* category */
+
+.category-area {
+    background: aliceblue;
+}
+
+.category-title {
+    margin-bottom: 30px;
+}
+
+.single-category {
+    background: #fff;
+    border: 5px solid #fff;
+}
+
+.single-category img {
+    width: 100%;
+    height: 100%;
+}
+
+.category-title {
+    margin-bottom: 30px;
+}
+
+.single-category {
+    background: #fff;
+    padding: 20px 20px;
+    border-radius: 10px;
+}
+
+.single-category img {
+    border-radius: 10px;
+    height: 187px;
+    object-fit: cover;
+}
+
+.single-category img {
+    border-radius: 10px;
+}
+
+.category-name h4 {
+    margin-bottom: 0;
+    color: #131212;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.category-name {
+    margin-top: 20px;
+}
+
+/* restaturants */
+
+.single-restaturants {
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 20px #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    width: 100%;
+}
+
+.restaturants-img {
+    margin-right: 15px;
+}
+
+.restaturants-middle-area {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.restaturants-icon {
+    display: flex;
+    align-items: center;
+}
+
+.restaturants-content h2 {
+    color: #131010;
+    font-weight: 600;
+    font-size: 26px;
+}
+
+.restaturants-content p {
+    color: #666;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.restaturants-content p strong {
+    font-weight: 400;
+}
+
+.restaturants-price p {
+    margin-bottom: 0;
+    font-weight: 500;
+    color: #151313;
+    font-size: 25px;
+}
+
+.restaturants-price {
+    border-right: 1px solid #9a9898;
+    padding-right: 15px;
+    margin-right: 15px;
+}
+
+.restaturants-icon svg {
+    background: #fb524e;
+    color: #fff;
+    margin-right: 15px;
+    fill: white;
+    padding: 10px 10px;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+}
+
+.restaturants-bottom-area {
+    margin-top: 15px;
+}
+
+.rating-area svg {
+    fill: #FFC611;
+    width: 20px;
+    height: 20px;
+}
+
+.restaurants-header-content h2 {
+    font-size: 45px;
+}
+
+.restaurants-header-content p {
+    color: #666;
+    font-size: 18px;
+}
+
+.restaturants-img img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* partership */
+
+.single-partnership {
+    background: aliceblue;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.single-partnership img {
+    border-radius: 20%;
+    width: 100%;
+    padding: 55px;
+    object-fit: cover;
+    padding-bottom: 0;
+    height: 450px;
+}
+
+.partner-bottom-area {
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 55px;
+    align-items: center;
+}
+
+.partner-bottom-area h4 {
+    color: #333;
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+.partner-bottom-area a {
+    background: #fb524e;
+    color: #fff;
+    padding: 15px 40px;
+    font-size: 18px;
+    border-radius: 35px;
+    white-space: nowrap;
+}
+
+.partnership-header-area h3 {
+    font-size: 45px;
+    font-weight: 600;
+}
+
+/* restaurants details */
+.resturants-details-area {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 450px;
+}
+
+.resturants-details-area::before {content: "";position: absolute;left: 0;right: 0;top: 0;bottom: 0;background: #292929c7;}
+
+.resturants-content-area {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 16rem;
+}
+
+.resturant-logo img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.resturants-another-iformation h4 {
+    color: #fff;
+    font-size: 28px;
+}
+
+.resturants-another-iformation p {
+    color: #f5f2f2;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.resturants-another-iformation p svg {
+    fill: #f5f2f2;
+}
+
+.resturants-rating svg {
+    fill: #FFC611;
+    width: 20px;
+    height: 20px;
+}
+
+.resturants-rating {
+    color: #fff;
+}
+
+.resturents-right-side-information {
+    position: relative;
+    float: right;
+    margin-top: 17rem;
+}
+
+.delivery-time {
+    display: flex;
+    align-items: center;
+}
+
+.delivery-time svg {
+    fill: #fff;
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.delivery-time p {
+    margin-bottom: 0;
+    color: #fff;
+}
+
+.delivery-time p span {
+    display: block;
+}
+
+.delivery-time p {
+    color: #fff;
+    font-size: 17px;
+    margin-bottom: 0;
+}
+
+.resturants-open select {
+    border: none;
+    border-radius: 5px;
+    padding: 13px 40px;
+    font-size: 17px;
+}
+
+.resturants-open {
+    margin-top: 15px;
+}
+
+.category-lists ul li {
+    list-style: none;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #f3f1f1;
+    padding-bottom: 20px;
+}
+
+.category-lists ul li:last-child {
+    border-bottom: none;
+}
+
+.category-lists ul li a {
+    color: #333;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.category-header {
+    margin-bottom: 30px;
+}
+
+.category-header h4 {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.food-lists-area button {
+    font-size: 17px;
+    color: #333;
+    padding: 10px 22px;
+}
+
+.food-lists-area button svg {
+    width: 20px;
+}
+
+.food-lists-area .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #fb524e;
+}
+
+.food-lists-area .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active svg {
+    fill: #fb524e;
+}
+
+.food-lists-area button:hover {
+    color: #333;
+}
+
+.food-menu-area {
+    margin-top: 20px;
+}
+
+.food-menu-header h5 {
+    font-weight: 500;
+    font-size: 25px;
+    margin-bottom: 0;
+}
+
+.food-menu-header p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.single-food {
+    box-shadow: 0 0 20px #ddd;
+    padding: 12px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.food-img img {
+    border-radius: 5px;
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.food-title-des h5 {
+    text-transform: capitalize;
+    font-size: 19px;
+    margin-bottom: 2px;
+}
+
+.food-title-des p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.food-price-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add-to-cart a svg {
+    fill: #fb524e;
+}
+
+.single-food-menu {
+    margin-bottom: 30px;
+}
+
+.delivery-toogle-action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.delivery-toogle-action .form-switch {padding-left: 55px !important;padding: 0;line-height: 0;}
+
+.delivery-toogle-action .form-switch input {
+    margin-right: 10px;
+}
+
+.pickup-time svg {
+    fill: #fb524e;
+}
+
+.cart-item {
+    margin-top: 40px;
+}
+
+.single-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.cart {
+    border: 1px solid #efefef;
+    padding: 25px 15px;
+    border-radius: 5px;
+}
+
+.item-title h5 {
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 3px;
+}
+
+.item-title p {
+    color: #666;
+    font-size: 15px;
+}
+
+.item-price p {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.item-increase {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+    padding: 3px 2px;
+    box-shadow: 0 0 30px #ececec;
+    width: 100%;
+}
+
+.item-increase a svg {
+    width: 18px;
+}
+
+
+.cart-subtotal {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-subtotal h4 {
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.cart-subtotal p {
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.cart-checkout {
+    margin-top: 15px;
+}
+
+.cart-checkout button {
+    border: none;
+    background: #fb524e;
+    color: #fff;
+    padding: 15px 2px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+
+/* checkout */
+.checkout-form {
+    box-shadow: 0 0 20px #ddd;
+    padding: 50px 40px;
+    border-radius: 15px;
+}
+
+.checkout-header-area h2 {
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.checkout-main-area input {
+    height: 60px;
+    padding: 0 17px;
+    margin-bottom: 25px;
+}
+
+.checkout-main-area label {
+    font-size: 17px;
+    margin-bottom: 7px;
+}
+
+.checkout-main-area input::placeholder {
+    color: #a5a0a0;
+}
+
+.checkout-header-area h2 span {
+    background: #fb524e;
+    color: #fff;
+    padding: 0 16px;
+    border-radius: 10px;
+}
+
+.checkout-header-area h2 span {
+    background: #fb524e;
+    color: #fff;
+    padding: 0 16px;
+    border-radius: 10px;
+}
+
+.checkout-main-area input:focus {
+    box-shadow: none;
+    outline: 0;
+    border: 1px solid #ddd;
+}
+
+.checkout-main-area textarea:focus {
+    outline: 0;
+    box-shadow: none;
+    border: 1px solid #ddd;
+}
+
+.checkout-main-area textarea {
+    padding: 15px 18px;
+}
+
+.checkout-main-area textarea::placeholder {
+    color: #b1afaf;
+}
+
+.order-from p {
+    color: #333;
+    font-size: 21px;
+}
+
+.single-cart-items {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.checkout-cart-items {
+    margin-top: 40px;
+}
+
+.qty-count strong {
+    margin-right: 10px;
+}
+
+.qty-count .icon {
+    font-size: 22px;
+    margin-right: 5px;
+}
+
+.qty-count .name {
+    color: #666;
+    font-size: 16px;
+}
+
+.cart-price span {
+    color: #333;
+    font-weight: 500;
+}
+
+.checkout-bottom-area {
+    border-top: 1px solid #ddd;
+    margin-top: 23px;
+    padding-top: 23px;
+}
+
+.map-area {
+    border: 1px solid #ddd;
+    height: 200px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+
+
+.filter-header h5 {
+    color: #333;
+    font-size: 30px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.filter-content .form-check {
+    margin-bottom: 15px;
+}
+
+.filter-content {
+    margin-top: 25px;
+}
+
+.filter-content .form-check label {
+    font-size: 17px;
+    color: #666;
+}
+
+.single-filter-area {
+    margin-bottom: 50px;
+}
+
+.filter-content input {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+.restaturants-bottom-area {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.restaturants-content {
+    width: 100%;
+}
+
+.restaturants-img img {
+    width: 300px;
+    object-fit: cover;
+}
+
+.restaturants-view-menu a {
+    background: #fb524e;
+    color: #fff;
+    padding: 13px 30px;
+    border-radius: 5px;
+}
+
+.single-filter-area {
+    margin-bottom: 50px;
+}
+
+.single-find-area.rider-area {
+    background: #613df1;
+}
+
+.map-embed-area iframe {
+    width: 100%;
+    height: 400px;
+}
+
+label.form-check-label {
+    margin-top: 12px;
+}
+
+.filter-content {
+    margin-top: 25px;
+    padding: 0 30px;
+    padding-left: 0;
+}
+
+.filter-search-title h5 {
+    color: #333;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.search-filter {
+    margin-bottom: 35px;
+}
+
+.filter-search-content input {
+    padding: 15px 20px;
+}
+
+.find-restaurant-content h4 {
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.find-restaurant-content p {
+    color: #e8e5e5;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.find-restaurant-content a {
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 13px 35px;
+    border-radius: 5px;
+    line-height: 4;
+}
+
+.single-find-area {
+    background: #485efd;
+    padding: 50px 25px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.filter-search-content input:focus {
+    box-shadow: none;
+    outline: 0;
+    border: 1px solid #ddd;
+}
+
+/* location */
+.location-header-title h4 {
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.single-city img {
+    width: 100%;
+    border-radius: 60px;
+    height: 310px;
+    object-fit: cover;
+}
+
+.single-city {
+    position: relative;
+}
+
+.city-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.single-city:before {
+    content: "";
+    position: absolute;
+    background: #0000008c;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 60px;
+}
+
+.city-content h3 {
+    color: #fff;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+
+
+/* footer */
+.footer-area {
+    background: aliceblue;
+    padding: 100px 0;
+    padding-bottom: 0;
+}
+
+.footer-menu-header h5 {
+    margin-bottom: 30px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.footer-menu ul {
+    padding: 0;
+    margin: 0;
+}
+
+.footer-menu ul li {
+    list-style: none;
+    margin-bottom: 18px;
+}
+
+.footer-menu ul li a {
+    color: #666;
+}
+
+.footer-menu ul li svg {
+    fill: #fb524e;
+}
+
+.footer-menu ul li {
+    color: #666;
+    padding-right: 130px;
+    line-height: 30px;
+}
+
+.subscribe-header h5 {
+    margin-bottom: 30px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.subscribe-form .form-group {
+    display: flex;
+    align-items: center;
+}
+
+.subscribe-form .form-control {
+    border: none;
+    padding: 15px 21px;
+}
+
+.subscribe-form button {
+    border: none;
+    background: #fb524e;
+    padding: 14px 16px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.subscribe-form button svg {
+    fill: #fff;
+}
+
+.follow-area {
+    margin-top: 30px;
+}
+
+.follow-body ul li img {
+    height: 30px;
+}
+
+.follow-body ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.follow-body {
+    margin-top: 15px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #ececec;
+    padding: 30px 0;
+    margin-top: 30px;
+}
+
+.footer-right-area p {
+    margin-bottom: 0;
+}
+
+.map-canvas {
+    height: 250px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.place-order button {
+    border: none;
+    background: #fb524e;
+    color: #fff;
+    width: 100%;
+    padding: 20px 0;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.alert ul li {
+    list-style: none;
+}
+
+.payment_section label {
+    border: 2px solid #ddd;
+    padding: 12px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.payment_section label.active {
+    border-color: #fb524e;
+}
+
+.confirmation-page {
+    box-shadow: 0 0 20px #ddd;
+    border-radius: 5px;
+    padding: 60px 0;
+}
+
+.confirmation-page svg {
+    height: 120px;
+    width: 120px;
+    margin-bottom: 10px;
+    fill: #fb524e;
+}
+
+.book-header-area h6 {
+    font-size: 24px;
+}
+
+.order-confirm h4 {
+    color: #333;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.order-confirm a {
+    color: #fff;
+    background: #fb524e;
+    padding: 14px 40px;
+    border-radius: 5px;
+    font-size: 17px;
+    line-height: 4;
+}
+
+.book-table-area {
+    margin-top: 25px;
+}
+
+.book-header h6 {
+    margin-top: 10px;
+    color: #383434;
+    margin-bottom: 15px;
+    font-size: 19px;
+}
+
+.book-header h6 {
+    margin-top: 10px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.book-body-area .form-group {
+    margin-bottom: 15px;
+}
+
+.book-body-area .form-control {
+    height: 55px;
+    padding: 0 17px;
+}
+
+.book-body-area label {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.book-body-area textarea {
+    height: 150px !important;
+}
+
+.button-area button {
+    border: none;
+    background: #fb524e;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 12px 50px;
+}
+
+.restaturant-header-area h4 {
+    color: #444;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.restaurant-content-area p {
+    color: #666;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.restaurant-phone-number svg {
+    fill: #fb524e;
+}
+
+.restaurant-phone-number {
+    margin-top: 20px;
+}
+
+.restaurant-email-number svg {
+    fill: #fb524e;
+}
+
+.restaurant-email-number {
+    margin-top: 10px;
+}
+
+.google-map iframe {
+    height: 420px;
+    border-radius: 5px;
+}
+
+.reviews-main-area {
+    margin-top: 35px;
+}
+
+.review-header-area h4 {
+    font-size: 25px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+}
+
+.single-review {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.review-img img {
+    height: 130px;
+    width: 130px;
+    object-fit: cover;
+    border-radius: 100px;
+}
+
+.review-img {
+    margin-right: 15px;
+}
+
+.author-name h2 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.review-ratings svg {
+    fill: #fb524e;
+    width: 20px;
+    height: 20px;
+}
+
+.review-paragraph p {
+    color: #666;
+    margin-bottom: 0;
+    margin-top: 6px;
+}
+
+.map-embed-area div {
+    height: 300px;
+}
+
+.login-card {
+    margin: 100px 0;
+    padding: 60px 60px;
+    box-shadow: 0 0 20px #e6e6e6;
+    border-radius: 30px;
+}
+
+.login-header h5 {
+    color: #333;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.login-form label {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.login-form .form-group {
+    margin-bottom: 15px;
+}
+
+.login-form input {
+    height: 60px;
+    border: none;
+    background: aliceblue;
+    border-radius: 30px;
+    padding: 0 28px;
+}
+
+.login-form input:focus {
+    box-shadow: none;
+    background: aliceblue;
+}
+
+/* login */
+.login-form input[type="checkbox"] {
+    height: 13px;
+}
+
+.forgotten {
+    float: right;
+}
+
+.remember-section.d-flex {
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.forgotten a {
+    color: #fb524e;
+    font-size: 17px;
+}
+
+.custom-control.custom-checkbox label {
+    font-size: 18px;
+}
+
+.login-button button {
+    border: none;
+    background: #fb524e;
+    color: #fff;
+    width: 100%;
+    height: 55px;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.dont-have-account {
+    margin-top: 15px;
+}
+
+.dont-have-account p {
+    font-size: 18px;
+    color: #666;
+}
+
+.dont-have-account p a {
+    color: #fb524d;
+}
+
+.dont-have-account h6 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 32px;
+    font-weight: 400;
+    color: #444242;
+}
+
+.social-links a {background: #17A5FB;padding: 15px 15px;border-radius: 28px;line-height: 3;}
+
+.social-links a svg {
+    fill: white;
+}
+
+.social-links a:first-child {
+    margin-right: 20px;
+}
+
+.social-links a:last-child {
+    background: #DE5346;
+}
+
+.section-header-title h2 {
+    font-size: 45px;
+    margin-bottom: 50px;
+    color: #333;
+}
+
+.custom-form input {
+    height: 60px;
+}
+
+.custom-form .form-control {
+    margin-bottom: 30px;
+    padding: 15px 30px;
+    border: none;
+    background: aliceblue;
+    border-radius: 30px;
+}
+
+.custom-form .form-control::placeholder {
+    color: #b1afaf;
+}
+
+.custom-form button {
+    border: none;
+    background: #fb524e;
+    color: #fff;
+    padding: 15px 40px;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+
+.register-card {
+    margin: 150px 0;
+    box-shadow: 0 0 20px #ddd;
+    padding: 100px 80px;
+    border-radius: 30px;
+}
+
+.register-progress ul li {
+    display: inline-block;
+    padding: 0 27px;
+}
+
+.register-progress ul li .register-progress-number span {
+    background: aliceblue;
+    padding: 10px 23px;
+    border-radius: 51px;
+    margin: 0 25px;
+    color: #fb524e;
+    font-size: 25px;
+}
+
+.register-progress ul li.active .register-progress-number span {background: #fb524e;color: #fff;}
+
+.register-progress ul li .register-progress-number {
+    margin-bottom: 15px;
+}
+
+.register-progress-body {
+    color: #6d6a6a;
+    font-size: 20px;
+}
+
+.register-progress {
+    margin-bottom: 30px;
+}
+
+.register-card-body input {
+    height: 60px;
+}
+
+.register-card-body .form-group {
+    margin-bottom: 30px;
+}
+
+.register-card-body .form-group label {
+    color: #666;
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+.register-card-body .form-control {
+    border: none;
+    background: aliceblue;
+    border-radius: 30px;
+}
+
+.register-card-body button {
+    border: none;
+    background: #fb524e;
+    color: #fff;
+    padding: 15px 35px;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+.register-card-body input {
+    padding: 0 25px;
+}
+
+.register-card-body select {
+    height: 60px;
+    padding: 0 25px;
+}
+
+.settings-main-menu ul li:last-child {margin-bottom: 0;}
+
+ul.nav.nav-tabs {
+    display: block;
+    border-bottom: 0;
+}
+
+.profile-img img {
+    width: 125px;
+    height: 125px;
+    border-radius: 100px;
+    object-fit: cover;
+}
+
+.settings-sidebar-card {
+    box-shadow: 0 0 20px #e5e3e3;
+    padding: 90px 60px;
+    border-radius: 10px;
+}
+
+.profile-img img {
+    margin-bottom: 15px;
+}
+
+.profile-content h5 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.settings-main-menu ul li {
+    margin-bottom: 24px;
+}
+
+.settings-main-menu ul li a {
+    color: #666;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.settings-main-menu {
+    margin-top: 40px;
+}
+
+.profile-content span {
+    color: #666;
+    font-size: 18px;
+}
+
+.settings-main-menu ul li a.active {
+    color: #fb524e;
+}
+
+.single-dashboard-widget {
+    background: aliceblue;
+    padding: 25px 25px;
+    border-radius: 5px;
+    justify-content: space-between;
+}
+
+.left-icon svg {
+    width: 75px;
+    height: 75px;
+    fill: #fb524e;
+}
+
+.right-area.f-right span {
+    float: right;
+}
+
+.right-area h5 {
+    font-size: 28px;
+}
+
+.right-area span {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.settings-content-area table thead tr th {
+    padding: 20px 30px;
+    background: aliceblue;
+    border-bottom: 0;
+}
+
+.settings-content-area table tbody tr th {
+    padding: 20px 43px;
+}
+
+.settings-content-area table tbody tr td {
+    padding: 20px 43px;
+}
+
+.badge.badge-primary {
+    background: #f14837;
+}
+
+.order-btn a {
+    background: black;
+    padding: 8px 12px;
+    border-radius: 10px;
+}
+
+.order-btn a svg {
+    fill: #fff;
+    width: 18px;
+    height: 18px;
+}
+
+.settings-content-area .form-control {
+    height: 60px;
+    padding: 0 17px;
+}
+
+.settings-content-area .form-group {
+    margin-bottom: 20px;
+}
+
+.settings-content-area h4 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.settings-content-area label {
+    color: #666;
+    font-size: 17px;
+    margin-bottom: 6px;
+}
+
+.btn-submit button {
+    border: none;
+    background: #fb524e;
+    color: #fff;
+    padding: 13px 39px;
+    font-size: 17px;
+    border-radius: 5px;
+}
+
+.settings-content-area .form-control:focus {
+    box-shadow: none;
+    outline: 0;
+    border-color: #ddd;
+}
+
+.order-details-area table thead tr th {
+    background: aliceblue;
+    padding: 20px 14px;
+    border-bottom: 0;
+}
+
+.order-details-area .card-body {
+    padding: 0 0px;
+}
+
+.order-details-area .card {
+    border: none;
+    box-shadow: 0 0 20px #ddd;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 60px 40px;
+}
+
+.cart-bottom-details {
+    margin-top: 24px;
+}
+
+.cart-bottom-details p b {
+    margin-right: 10px;
+}
+
+.order-details-area .card-header {
+    background: aliceblue;
+    border-bottom: 0;
+    padding: 20px 20px;
+    margin-bottom: 20px;
+}
+
+.order-details-area .card-header h5 {
+    margin-bottom: 0;
+    font-size: 18px;
+}
+
+.activity-icon svg {
+    fill: white;
+}
+
+.filter-content label.form-check-label {
+    margin-top: 0;
+}
+
+.mobile-menu a svg {
+    border: 1px solid #ddd;
+    padding: 10px 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.mobile-menu {
+    margin-right: 60px;
+}

@@ -1,0 +1,24 @@
+Khana v4.0 Update Documentation
+
+
+
+// ------------------------------------- //
+
+1) How To Update
+
+
+- replace Themes folder from this root: root_file/script/am-content/Themes
+- replace CustomizerTableSeeder.php from this root: root_file/script/database/seeds
+
+
+
+// ------------------------------------- //
+
+
+Created: 7/08/2020
+Last Update: 11/10/2021
+By: AMCoders
+Email: amcoders360@gmail.com
+
+
+Copyright © 2021 Khana All rights reserved
